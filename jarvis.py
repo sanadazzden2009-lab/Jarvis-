@@ -52,7 +52,7 @@ cursor.execute("CREATE TABLE IF NOT EXISTS memory (id INTEGER PRIMARY KEY, query
 db.commit()
 
 # Configuration
-API_KEY = "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"
+API_KEY = "GROQ_KEY_PLACEHOLDER"
 URL = "https://api.groq.com/openai/v1/chat/completions"
 
 def ask_ai(q):
