@@ -25,7 +25,7 @@ jobs:
           pip install flet
 
       - name: Inject API Key
-        run: sed -i 's/GROQ_KEY_PLACEHOLDER/${{ secrets.GROQ_API_KEY }}/g' jarvis.py
+        run: sed -i 's/GROQ_KEY_PLACEHOLDER/${{ secrets.GROQ_API_KEY }}/g' main.py
 
       - name: Build APK
         run: echo "y" | flet build apk
